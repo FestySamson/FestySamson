@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Festy Samson | Web Developer, UI/UX Designer & Digital Professional</title>
+<meta name="description" content="Festy Samson builds websites and digital experiences for businesses: web development, UI/UX design and digital marketing from Nigeria.">
+<meta property="og:title" content="Festy Samson | I Build Digital Experiences That Move Ideas Forward">
+<meta property="og:description" content="Web developer, UI/UX designer and digital professional. Explore websites for schools, real estate, fintech and agriculture.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="festy.jpg"><!-- replace with full URL after deploying -->
+<meta name="theme-color" content="#1c1b22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{ink:'#1c1b22',ink2:'#26252e',paper:'#f6f4f0',violet:'#7b61d9',lav:'#e7e1f8'},fontFamily:{display:['"Bricolage Grotesque"','sans-serif'],sans:['"DM Sans"','system-ui','sans-serif']}}}}
+</script>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+:focus-visible{outline:3px solid #a791f0;outline-offset:3px}
+.grain{background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:22px 22px}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.rise{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}.rise.d{animation-delay:.15s}.rise.d2{animation-delay:.3s}
+/* CSS-only project filter */
+.portfolio input{position:absolute;opacity:0;pointer-events:none}
+.portfolio label{cursor:pointer;transition:.2s}
+.portfolio input:checked+label{background:#1c1b22;color:#fff;border-color:#1c1b22}
+.portfolio input:focus-visible+label{outline:3px solid #a791f0;outline-offset:2px}
+.portfolio:has(#f-web:checked) .card:not([data-c~=web]),
+.portfolio:has(#f-biz:checked) .card:not([data-c~=biz]),
+.portfolio:has(#f-fin:checked) .card:not([data-c~=fin]),
+.portfolio:has(#f-re:checked) .card:not([data-c~=re]),
+.portfolio:has(#f-agr:checked) .card:not([data-c~=agr]),
+.portfolio:has(#f-edu:checked) .card:not([data-c~=edu]){display:none}
+details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-marker{display:none}
+details[open] .chev{transform:rotate(180deg)}.chev{transition:transform .25s}
+#menu:checked~nav .links{display:flex}
+</style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-[60] focus:bg-white focus:p-3">Skip to content</a>
+
+<!-- HEADER -->
+<header class="fixed inset-x-0 top-0 z-50 bg-ink/90 backdrop-blur text-white border-b border-white/10">
+<input type="checkbox" id="menu" class="peer sr-only">
+<div class="relative max-w-6xl mx-auto px-5">
+<nav aria-label="Main" class="flex items-center justify-between h-16">
+<a href="#home" class="font-display font-bold text-lg">Festy Samson</a>
+<label for="menu" class="md:hidden cursor-pointer p-2 border border-white/20 rounded" aria-label="Toggle menu">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></label>
+<div class="links hidden md:flex flex-col md:flex-row absolute md:static top-16 inset-x-0 bg-ink md:bg-transparent p-5 md:p-0 gap-4 md:gap-7 text-sm items-start md:items-center">
+<a class="hover:text-lav" href="#about">About</a><a class="hover:text-lav" href="#projects">Projects</a><a class="hover:text-lav" href="#services">Services</a><a class="hover:text-lav" href="#skills">Skills</a><a class="hover:text-lav" href="#experience">Experience</a>
+<a href="#contact" class="bg-violet hover:bg-[#6a50c4] transition px-4 py-2 rounded-full font-medium">Hire me</a>
+</div></nav></div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section id="home" class="grain bg-ink text-white pt-28 pb-20 overflow-hidden">
+<div class="max-w-6xl mx-auto px-5 grid md:grid-cols-[1.15fr_.85fr] gap-12 items-center">
+<div>
+<p class="rise text-lav/80 mb-5">Festy Samson · Web developer & UI/UX designer</p>
+<h1 class="rise d font-display font-bold text-[2.6rem] sm:text-6xl leading-[1.04] tracking-tight">I Build Digital Experiences That Move Ideas Forward.</h1>
+<p class="rise d2 mt-6 text-lg text-white/75 max-w-xl leading-relaxed">I'm Festy Samson, a web developer, UI/UX designer, and digital professional helping businesses transform ideas into functional, user-friendly, and impactful digital experiences.</p>
+<div class="rise d2 mt-9 flex flex-wrap gap-3">
+<a href="#projects" class="bg-violet hover:bg-[#6a50c4] transition px-6 py-3 rounded-full font-medium">Explore my work</a>
+<a href="#contact" class="border border-white/30 hover:bg-white hover:text-ink transition px-6 py-3 rounded-full font-medium">Let's work together</a>
+</div>
+<p class="rise d2 mt-8 text-sm text-white/50">Websites for schools, real estate, fintech, agriculture and digital services.</p>
+</div>
+<div class="relative max-w-sm mx-auto md:ml-auto w-full">
+<div class="rounded-t-[999px] rounded-b-3xl overflow-hidden bg-lav aspect-[4/5]">
+<img src="./1006646420.jpg" alt="Portrait of Festy Samson smiling in an orange hoodie" class="w-full h-full object-cover object-top" width="640" height="960" fetchpriority="high"></div>
+<div class="absolute -left-4 sm:-left-10 -bottom-6 w-60 bg-paper text-ink rounded-xl shadow-2xl overflow-hidden">
+<div class="flex items-center gap-1.5 bg-lav px-3 py-2"><i class="w-2 h-2 rounded-full bg-ink/30"></i><i class="w-2 h-2 rounded-full bg-ink/30"></i><i class="w-2 h-2 rounded-full bg-ink/30"></i><span class="ml-2 text-[11px] text-ink/60">live projects</span></div>
+<ul class="p-3 text-sm space-y-1 font-medium"><li>adswiftdirect.com</li><li>buyletlive.com</li><li>hycybertechhub.com</li><li class="text-ink/50">+ 3 more below</li></ul></div>
+</div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24">
+<div class="max-w-6xl mx-auto px-5 grid md:grid-cols-[.8fr_1.2fr] gap-12">
+<h2 class="font-display font-bold text-4xl leading-tight">Physics taught me to break problems down. Websites let me build the answers.</h2>
+<div class="space-y-5 text-lg leading-relaxed text-ink/80 max-w-2xl">
+<p>I'm a Nigerian digital professional working across web development, UI/UX design, digital marketing, graphics and business operations. I studied Physics at the Federal University of Petroleum Resources, Effurun (FUPRE) and graduated in May 2023.</p>
+<p>That training shaped how I work: understand the problem first, plan the structure, then design and build. I've applied it to school, real estate, fintech, agriculture and digital-service websites, always asking what the visitor needs to understand and do next.</p>
+<p>I've also supervised restaurant teams, managed community and marketing work for a crypto exchange project, and taught Mathematics and Physics during NYSC. Those roles taught me to communicate clearly, stay accountable and keep a business running.</p>
+<p class="border-l-4 border-violet pl-4 text-ink">My approach: technology should make something easier for a real person, whether that's a parent finding school news or a Nigerian abroad exploring property back home.</p>
+</div></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="pb-24">
+<div class="max-w-6xl mx-auto px-5 portfolio relative">
+<h2 class="font-display font-bold text-4xl">Selected projects</h2>
+<p class="mt-3 text-ink/70 max-w-2xl">Each card has a screenshot slot (see the shots folder) and a short case study. Text in [square brackets] is a placeholder for you to confirm or replace.</p>
+<div class="mt-8 flex flex-wrap gap-2" role="radiogroup" aria-label="Filter projects">
+<input type="radio" name="f" id="f-all" checked><label for="f-all" class="border border-ink/20 rounded-full px-4 py-1.5 text-sm">All</label>
+<input type="radio" name="f" id="f-web"><label for="f-web" class="border border-ink/20 rounded-full px-4 py-1.5 text-sm">Web development</label>
+<input type="radio" name="f" id="f-biz"><label for="f-biz" class="border border-ink/20 rounded-full px-4 py-1.5 text-sm">Business websites</label>
+<input type="radio" name="f" id="f-fin"><label for="f-fin" class="border border-ink/20 rounded-full px-4 py-1.5 text-sm">Fintech & crypto</label>
+<input type="radio" name="f" id="f-re"><label for="f-re" class="border border-ink/20 rounded-full px-4 py-1.5 text-sm">Real estate</label>
+<input type="radio" name="f" id="f-agr"><label for="f-agr" class="border border-ink/20 rounded-full px-4 py-1.5 text-sm">Agriculture</label>
+<input type="radio" name="f" id="f-edu"><label for="f-edu" class="border border-ink/20 rounded-full px-4 py-1.5 text-sm">Education</label>
+</div>
+
+<div class="mt-8 grid md:grid-cols-2 gap-6 items-start">
+
+<!-- Project template: copy a whole <article> to add a project. Change data-c (web biz fin re agr edu) and the colours. -->
+<article class="card bg-white rounded-2xl overflow-hidden border border-ink/10" data-c="web edu">
+<div class="bg-ink/5 px-4 py-2 text-xs text-ink/50 border-b border-ink/10">amcel-breed-international-school.vercel.app</div>
+<!-- Replace shots/amcel.jpg with your screenshot (keep the same file name, or change src) -->
+<img src="./amcel.png" alt="Screenshot of the Amcel Breed International School website" width="1280" height="800" loading="lazy" class="w-full aspect-[16/10] object-cover object-top bg-lav">
+<div class="p-6"><p class="text-sm text-violet font-medium">Education · School website & blog · [Status: Completed]</p>
+<h3 class="font-display font-bold text-2xl mt-1">Amcel Breed International School</h3>
+<p class="mt-2 text-ink/75">A digital platform giving a school a stronger online presence, sharing information with parents and students, and publishing school updates and educational content.</p>
+<details class="mt-4 border-t border-ink/10 pt-3"><summary class="flex justify-between font-medium">Read case study <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+<dl class="mt-3 space-y-2 text-sm text-ink/80"><div><dt class="font-bold inline">Purpose: </dt><dd class="inline">Help parents and students find school information and news in one place.</dd></div><div><dt class="font-bold inline">Need: </dt><dd class="inline">Schools often lack a clear online home for admissions, updates and contact details.</dd></div><div><dt class="font-bold inline">My role: </dt><dd class="inline">[Confirm: design, development, content structure]</dd></div><div><dt class="font-bold inline">Features: </dt><dd class="inline">[Confirm: academics, admissions, news/blog, gallery, contact, admin]</dd></div><div><dt class="font-bold inline">Tech: </dt><dd class="inline">[Confirm stack] · Hosted on Vercel</dd></div></dl></details>
+<a href="https://amcel-breed-international-school.vercel.app" target="_blank" rel="noopener" class="inline-block mt-4 bg-ink text-white px-5 py-2 rounded-full text-sm hover:bg-violet transition">Visit website</a></div></article>
+
+<article class="card bg-white rounded-2xl overflow-hidden border border-ink/10" data-c="fin biz">
+<div class="bg-ink/5 px-4 py-2 text-xs text-ink/50 border-b border-ink/10">adswiftdirect.com</div>
+<!-- Replace shots/adswift.jpg with your screenshot (keep the same file name, or change src) -->
+<img src="./adswift.png" alt="Screenshot of the Adswift Direct website" width="1280" height="800" loading="lazy" class="w-full aspect-[16/10] object-cover object-top bg-lav">
+<div class="p-6"><p class="text-sm text-violet font-medium">Fintech & crypto · Product website · [Status: Live]</p>
+<h3 class="font-display font-bold text-2xl mt-1">Adswift Direct</h3>
+<p class="mt-2 text-ink/75">The website for a crypto-related mobile app offering crypto-to-cash services, bill payments, airtime and data.</p>
+<details class="mt-4 border-t border-ink/10 pt-3"><summary class="flex justify-between font-medium">Read case study <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+<dl class="mt-3 space-y-2 text-sm text-ink/80"><div><dt class="font-bold inline">Purpose: </dt><dd class="inline">Explain the app's value, build credibility and help people discover a digital financial service.</dd></div><div><dt class="font-bold inline">My role: </dt><dd class="inline">Website and digital marketing. I did not build the mobile app itself.</dd></div><div><dt class="font-bold inline">Features: </dt><dd class="inline">[Confirm from live site]</dd></div><div><dt class="font-bold inline">Tech: </dt><dd class="inline">[Confirm stack]</dd></div></dl></details>
+<a href="https://adswiftdirect.com" target="_blank" rel="noopener" class="inline-block mt-4 bg-ink text-white px-5 py-2 rounded-full text-sm hover:bg-violet transition">Visit website</a></div></article>
+
+<article class="card bg-white rounded-2xl overflow-hidden border border-ink/10" data-c="biz web">
+<div class="bg-ink/5 px-4 py-2 text-xs text-ink/50 border-b border-ink/10">hycybertechhub.com</div>
+<!-- Replace shots/hycybertechhub.jpg with your screenshot (keep the same file name, or change src) -->
+<img src="./hycy.png" alt="Screenshot of the HyCyberTechHub website" width="1280" height="800" loading="lazy" class="w-full aspect-[16/10] object-cover object-top bg-lav">
+<div class="p-6"><p class="text-sm text-violet font-medium">Business website · Digital services · [Status: Live]</p>
+<h3 class="font-display font-bold text-2xl mt-1">HyCyberTechHub</h3>
+<p class="mt-2 text-ink/75">An online presence for a digital services company, built around clear positioning, service presentation and easy navigation.</p>
+<details class="mt-4 border-t border-ink/10 pt-3"><summary class="flex justify-between font-medium">Read case study <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+<dl class="mt-3 space-y-2 text-sm text-ink/80"><div><dt class="font-bold inline">Purpose: </dt><dd class="inline">Help prospective customers quickly understand what the company offers.</dd></div><div><dt class="font-bold inline">My role: </dt><dd class="inline">Developer</dd></div><div><dt class="font-bold inline">Services shown: </dt><dd class="inline">[List the services from the live site]</dd></div><div><dt class="font-bold inline">Tech: </dt><dd class="inline">React</dd></div></dl></details>
+<a href="https://hycybertechhub.com" target="_blank" rel="noopener" class="inline-block mt-4 bg-ink text-white px-5 py-2 rounded-full text-sm hover:bg-violet transition">Visit website</a></div></article>
+
+<article class="card bg-white rounded-2xl overflow-hidden border border-ink/10" data-c="re web">
+<div class="bg-ink/5 px-4 py-2 text-xs text-ink/50 border-b border-ink/10">buyletlive.com</div>
+<!-- Replace shots/buyletlive.jpg with your screenshot (keep the same file name, or change src) -->
+<img src="./buylet (1).png" alt="Screenshot of the BuyLetLive website" width="1280" height="800" loading="lazy" class="w-full aspect-[16/10] object-cover object-top bg-lav">
+<div class="p-6"><p class="text-sm text-violet font-medium">Real estate · Property discovery · [Status: Live]</p>
+<h3 class="font-display font-bold text-2xl mt-1">BuyLetLive</h3>
+<p class="mt-2 text-ink/75">A property discovery and inquiry website that helps Nigerians abroad explore property in Nigeria and contact the right people. There is no online checkout.</p>
+<details class="mt-4 border-t border-ink/10 pt-3"><summary class="flex justify-between font-medium">Read case study <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+<dl class="mt-3 space-y-2 text-sm text-ink/80"><div><dt class="font-bold inline">Audience: </dt><dd class="inline">Nigerians in the diaspora.</dd></div><div><dt class="font-bold inline">Focus: </dt><dd class="inline">Browsing listings, property images and details, locations, and clear inquiry and contact paths.</dd></div><div><dt class="font-bold inline">My role: </dt><dd class="inline">Developer</dd></div><div><dt class="font-bold inline">Tech: React </dt><dd class="inline">[Confirm stack]</dd></div></dl></details>
+<a href="https://buyletlive.com" target="_blank" rel="noopener" class="inline-block mt-4 bg-ink text-white px-5 py-2 rounded-full text-sm hover:bg-violet transition">Visit website</a></div></article>
+
+<article class="card bg-white rounded-2xl overflow-hidden border border-ink/10" data-c="agr biz web">
+<div class="bg-ink/5 px-4 py-2 text-xs text-ink/50 border-b border-ink/10">kbagricsolution.com</div>
+<!-- Replace shots/kbagric.jpg with your screenshot (keep the same file name, or change src) -->
+<img src="./buylet (2).png" alt="Screenshot of the KB Agric Solution website" width="1280" height="800" loading="lazy" class="w-full aspect-[16/10] object-cover object-top bg-lav">
+<div class="p-6"><p class="text-sm text-violet font-medium">Agriculture · Business website · [Status: Live]</p>
+<h3 class="font-display font-bold text-2xl mt-1">KB Agric Solution</h3>
+<p class="mt-2 text-ink/75">A website establishing the online presence of an agricultural business, applying web design to the agriculture sector.</p>
+<details class="mt-4 border-t border-ink/10 pt-3"><summary class="flex justify-between font-medium">Read case study <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+<dl class="mt-3 space-y-2 text-sm text-ink/80"><div><dt class="font-bold inline">Products/services: </dt><dd class="inline">[List from the live site]</dd></div><div><dt class="font-bold inline">My role: </dt><dd class="inline">Developer</dd></div><div><dt class="font-bold inline">Tech: </dt><dd class="inline">React</dd></div></dl></details>
+<a href="https://kbagricsolution.com" target="_blank" rel="noopener" class="inline-block mt-4 bg-ink text-white px-5 py-2 rounded-full text-sm hover:bg-violet transition">Visit website</a></div></article>
+
+<article class="card bg-white rounded-2xl overflow-hidden border border-ink/10" data-c="re web">
+<div class="bg-ink/5 px-4 py-2 text-xs text-ink/50 border-b border-ink/10">primeland.vercel.app</div>
+<!-- Replace shots/primeland.jpg with your screenshot (keep the same file name, or change src) -->
+<img src="shots/primeland.jpg" alt="Screenshot of the Primeland website" width="1280" height="800" loading="lazy" class="w-full aspect-[16/10] object-cover object-top bg-lav">
+<div class="p-6"><p class="text-sm text-violet font-medium">Real estate · Company website · [Status: Live]</p>
+<h3 class="font-display font-bold text-2xl mt-1">Primeland</h3>
+<p class="mt-2 text-ink/75">A website for a real estate company in Yenagoa, Bayelsa State. [Edit once scope and features are confirmed.]</p>
+<details class="mt-4 border-t border-ink/10 pt-3"><summary class="flex justify-between font-medium">Read case study <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+<dl class="mt-3 space-y-2 text-sm text-ink/80"><div><dt class="font-bold inline">Audience: </dt><dd class="inline">[Confirm]</dd></div><div><dt class="font-bold inline">Features: </dt><dd class="inline">[List from the live site]</dd></div><div><dt class="font-bold inline">My role: </dt><dd class="inline">Developer</dd></div><div><dt class="font-bold inline">Tech: </dt><dd class="inline">React</dd></div></dl></details>
+<a href="https://primeland.vercel.app" target="_blank" rel="noopener" class="inline-block mt-4 bg-ink text-white px-5 py-2 rounded-full text-sm hover:bg-violet transition">Visit website</a></div></article>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="bg-lav/60 py-24">
+<div class="max-w-6xl mx-auto px-5">
+<h2 class="font-display font-bold text-4xl">What I can build for you</h2>
+<p class="mt-3 text-ink/70 max-w-2xl">Every project starts with your business goal, then moves to structure, design, build and launch.</p>
+<div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
+<div class="border-t-2 border-ink pt-4"><h3 class="font-display font-bold text-xl">Business websites</h3><p class="mt-2 text-ink/75">A clear, credible home online that explains what you do and makes it easy to contact you.</p></div>
+<div class="border-t-2 border-ink pt-4"><h3 class="font-display font-bold text-xl">Custom design & development</h3><p class="mt-2 text-ink/75">Sites shaped around your audience and goals instead of a one-size-fits-all template.</p></div>
+<div class="border-t-2 border-ink pt-4"><h3 class="font-display font-bold text-xl">WordPress development</h3><p class="mt-2 text-ink/75">Sites built with Elementor that you can update yourself without touching code.</p></div>
+<div class="border-t-2 border-ink pt-4"><h3 class="font-display font-bold text-xl">Frontend development</h3><p class="mt-2 text-ink/75">Responsive, accessible interfaces in HTML, CSS, JavaScript, React and Tailwind.</p></div>
+<div class="border-t-2 border-ink pt-4"><h3 class="font-display font-bold text-xl">UI/UX design</h3><p class="mt-2 text-ink/75">Wireframes and layouts in Figma that make pages easier to understand and use.</p></div>
+<div class="border-t-2 border-ink pt-4"><h3 class="font-display font-bold text-xl">Website redesign</h3><p class="mt-2 text-ink/75">Refresh an outdated site so it looks current, loads well and works on phones.</p></div>
+<div class="border-t-2 border-ink pt-4"><h3 class="font-display font-bold text-xl">Landing pages</h3><p class="mt-2 text-ink/75">Focused pages for a product, offer or campaign, built to guide visitors to one action.</p></div>
+<div class="border-t-2 border-ink pt-4"><h3 class="font-display font-bold text-xl">E-commerce websites</h3><p class="mt-2 text-ink/75">Online stores with WooCommerce, set up so customers can browse and order easily.</p></div>
+<div class="border-t-2 border-ink pt-4"><h3 class="font-display font-bold text-xl">Digital marketing</h3><p class="mt-2 text-ink/75">Social media, content and campaign support to help people find and trust your brand.</p></div>
+</div></div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24">
+<div class="max-w-6xl mx-auto px-5">
+<h2 class="font-display font-bold text-4xl">Skills and tools</h2>
+<div class="mt-10 grid md:grid-cols-2 gap-6">
+<div class="bg-white border border-ink/10 rounded-2xl p-6"><h3 class="font-display font-bold text-xl mb-3">Web development</h3><p class="text-ink/80 leading-loose">HTML5 · CSS3 · JavaScript · React.js · Tailwind CSS · WordPress · Elementor · WooCommerce · Responsive development · Frontend implementation · Website optimization and maintenance</p></div>
+<div class="bg-white border border-ink/10 rounded-2xl p-6"><h3 class="font-display font-bold text-xl mb-3">UI/UX and visual design</h3><p class="text-ink/80 leading-loose">UI/UX design · User-centered design · Wireframing and layout planning · Responsive interface design · Figma · Canva · Graphics design · Visual hierarchy and typography</p></div>
+<div class="bg-white border border-ink/10 rounded-2xl p-6"><h3 class="font-display font-bold text-xl mb-3">Digital marketing and growth</h3><p class="text-ink/80 leading-loose">Digital and social media marketing · Content management · Online advertising · Brand marketing · Campaign planning · Community management · Customer engagement</p></div>
+<div class="bg-white border border-ink/10 rounded-2xl p-6"><h3 class="font-display font-bold text-xl mb-3">Business and product</h3><p class="text-ink/80 leading-loose">Product development collaboration · Requirements gathering · Business problem analysis · Project coordination · Client communication · Team supervision · Customer service · Process improvement</p></div>
+<div class="bg-white border border-ink/10 rounded-2xl p-6"><h3 class="font-display font-bold text-xl mb-3">Productivity and AI tools</h3><p class="text-ink/80 leading-loose">Microsoft Office · Excel · Google Workspace · Trello · Slack · Notion AI · ChatGPT · Grammarly · Zoom · Microsoft Teams</p></div>
+<div class="bg-ink text-white rounded-2xl p-6"><h3 class="font-display font-bold text-xl mb-3">Currently learning</h3><p class="text-white/80 leading-loose">SQL · Power BI</p></div>
+</div></div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="bg-ink text-white py-24">
+<div class="max-w-4xl mx-auto px-5">
+<h2 class="font-display font-bold text-4xl">Experience</h2>
+<ol class="mt-10 border-l border-white/20 space-y-10 ml-2">
+<li class="pl-8 relative"><i class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-violet"></i><h3 class="font-display font-bold text-xl">Web development and freelance digital work</h3><p class="mt-2 text-white/70">Building websites for businesses and digital products with modern frontend tools and WordPress: turning business needs into site structures, implementing interfaces and helping clients get online.</p></li>
+<li class="pl-8 relative"><i class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-violet"></i><h3 class="font-display font-bold text-xl">UI/UX design and digital marketing</h3><p class="mt-2 text-white/70">Designing interfaces and user journeys, managing digital content and supporting online campaigns that explain a brand's services to customers.</p></li>
+<li class="pl-8 relative"><i class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-violet"></i><h3 class="font-display font-bold text-xl">Community manager and virtual assistant, crypto exchange project</h3><p class="mt-2 text-white/70">Contributed across the product journey, including development coordination, launch preparation and marketing.</p></li>
+<li class="pl-8 relative"><i class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-violet"></i><h3 class="font-display font-bold text-xl">Supervisor, April 16 Restaurant</h3><p class="text-sm text-lav/80">Aug 2024 – Mar 2025</p><p class="mt-2 text-white/70">Supervised staff, supported customer service, tracked sales and records, and coordinated orders and dispatch.</p></li>
+<li class="pl-8 relative"><i class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-violet"></i><h3 class="font-display font-bold text-xl">Supervisor, Jbees Eatery and Lounge</h3><p class="text-sm text-lav/80">Jun 2023 – Jun 2024</p><p class="mt-2 text-white/70">Led daily operations: staff supervision, customer service, sales monitoring and order coordination.</p></li>
+<li class="pl-8 relative"><i class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-violet"></i><h3 class="font-display font-bold text-xl">Mathematics and Physics teacher (NYSC), Amcel Breed International School, Yenagoa</h3><p class="text-sm text-lav/80">2025 – 2026</p><p class="mt-2 text-white/70">Explained complex concepts clearly and built patient, structured problem-solving habits in students.</p></li>
+<li class="pl-8 relative"><i class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-violet"></i><h3 class="font-display font-bold text-xl">B.Sc. Physics, FUPRE, Effurun</h3><p class="text-sm text-lav/80">Graduated May 2023</p></li>
+</ol></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24">
+<div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12">
+<div>
+<h2 class="font-display font-bold text-4xl leading-tight">Have a project in mind? Let's talk about it.</h2>
+<p class="mt-4 text-ink/75 max-w-md">Whether you need a new website, a redesign or help with your digital presence, tell me what you're working on. I also welcome conversations about roles.</p>
+<ul class="mt-8 space-y-3">
+<li><a class="underline decoration-violet underline-offset-4" href="mailto:hello@yourdomain.com">festy955@gmail.com</a> <span class="text-sm text-ink/50"></span></li>
+<li><a class="underline decoration-violet underline-offset-4" href="https://linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><a class="underline decoration-violet underline-offset-4" href="https://github.com/samsonfesty" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<a href="festy-samson-cv.pdf" download class="inline-block mt-8 border border-ink px-5 py-2.5 rounded-full hover:bg-ink hover:text-white transition">Download CV</a>
+<p class="mt-2 text-xs text-ink/50">Add your CV as festy-samson-cv.pdf in this folder to activate this button.</p>
+</div>
+<!-- Replace YOUR_FORM_ID with a free Formspree form ID (formspree.io). Formspree provides spam filtering; _gotcha is a honeypot. -->
+<form action="https://formspree.io/f/festy955@gmail.com" method="POST" class="bg-white border border-ink/10 rounded-2xl p-6 space-y-4">
+<div><label for="n" class="block font-medium mb-1">Name</label><input id="n" name="name" required autocomplete="name" class="w-full border border-ink/20 rounded-lg px-3 py-2.5"></div>
+<div><label for="e" class="block font-medium mb-1">Email</label><input id="e" type="email" name="email" required autocomplete="email" class="w-full border border-ink/20 rounded-lg px-3 py-2.5"></div>
+<div><label for="t" class="block font-medium mb-1">What do you need?</label><select id="t" name="project_type" class="w-full border border-ink/20 rounded-lg px-3 py-2.5 bg-white"><option>New website</option><option>Website redesign</option><option>UI/UX design</option><option>Digital marketing</option><option>Job opportunity</option><option>Something else</option></select></div>
+<div><label for="m" class="block font-medium mb-1">Message</label><textarea id="m" name="message" rows="5" required minlength="10" class="w-full border border-ink/20 rounded-lg px-3 py-2.5"></textarea></div>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden">
+<button class="w-full bg-violet hover:bg-[#6a50c4] transition text-white font-medium py-3 rounded-full">Send message</button>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="bg-ink text-white/70 py-10">
+<div class="max-w-6xl mx-auto px-5 flex flex-wrap gap-4 justify-between text-sm">
+<p>© 2026 Festy Samson. Port Harcourt / Yenagoa, Nigeria.</p>
+<p class="flex gap-5"><a class="hover:text-white" href="mailto:hello@yourdomain.com">Email</a><a class="hover:text-white" href="https://linkedin.com/in/YOUR-USERNAME">LinkedIn</a><a class="hover:text-white" href="https://github.com/YOUR-USERNAME">GitHub</a><a class="hover:text-white" href="#home">Back to top</a></p>
+</div></footer>
+
+    <!-- Fixed WhatsApp button (bottom left) -->
+<a href="https://wa.me/2348108094806?text=Hello%20Festy%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+   target="_blank" rel="noopener" aria-label="Chat with Festy on WhatsApp"
+   class="fixed right-4 bottom-4 sm:right-6 sm:bottom-6 z-50 flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5a] text-white font-medium rounded-full shadow-lg p-3.5 sm:py-3 sm:pl-3.5 sm:pr-5 transition">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="hidden sm:inline">Chat on WhatsApp</span>
+</a>
+
+</body>
+</html>
